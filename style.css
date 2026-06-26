@@ -1,0 +1,257 @@
+/* =========================================
+   RESET
+   Basic reset for all elements
+========================================= */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* =========================================
+   BODY
+   Change background color and text color here
+========================================= */
+body{
+    font-family:Arial, sans-serif;
+
+    /* CHANGE WEBSITE BACKGROUND COLOR HERE */
+    background:#f4f4f4;
+
+    /* CHANGE TEXT COLOR HERE */
+    color:#333;
+
+    line-height:1.6;
+}
+
+/* =========================================
+   NAVBAR
+   Change navbar color here
+========================================= */
+nav{
+    /* CHANGE NAVBAR BACKGROUND COLOR HERE */
+    background:#0f172a;
+
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 30px;
+    flex-wrap:wrap;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+/* CHANGE NAVBAR HOVER COLOR HERE */
+nav ul li a:hover{
+    color:#22c55e;
+}
+
+/* =========================================
+   HERO SECTION
+   Change hero background here
+========================================= */
+.hero{
+    text-align:center;
+    padding:100px 20px;
+
+    /* CHANGE HERO BACKGROUND HERE */
+    background:linear-gradient(to right, #2563eb, #1e3a8a);
+
+    color:white;
+}
+
+.hero h1{
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:700px;
+    margin:0 auto 25px;
+    font-size:18px;
+}
+
+/* =========================================
+   BUTTON
+   Change button colors here
+========================================= */
+.btn{
+    display:inline-block;
+    text-decoration:none;
+    color:white;
+
+    /* CHANGE BUTTON BACKGROUND COLOR HERE */
+    background:#22c55e;
+
+    padding:12px 25px;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+/* CHANGE BUTTON HOVER COLOR HERE */
+.btn:hover{
+    background:#16a34a;
+}
+
+/* =========================================
+   CONTAINER
+========================================= */
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:50px 0;
+}
+
+.center-text{
+    text-align:center;
+    max-width:800px;
+    margin:auto;
+}
+
+/* =========================================
+   PROFILE SECTION
+========================================= */
+.profile-card{
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+
+    display:flex;
+    align-items:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.profile-image img{
+    width:250px;
+    height:250px;
+    object-fit:cover;
+    border-radius:50%;
+
+    /* CHANGE PHOTO BORDER COLOR HERE */
+    border:5px solid #2563eb;
+}
+
+.profile-text{
+    flex:1;
+}
+
+/* =========================================
+   PAGE HEADER
+========================================= */
+.page-header{
+    text-align:center;
+    padding:70px 20px;
+
+    /* CHANGE PAGE HEADER BACKGROUND HERE */
+    background:#1e3a8a;
+
+    color:white;
+}
+
+.page-header h1{
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+/* =========================================
+   CARDS
+========================================= */
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card h3{
+    margin-bottom:15px;
+    color:#1e3a8a;
+}
+
+/* =========================================
+   ABOUT / SUPPORT BOX
+========================================= */
+.info-box{
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.info-box h2{
+    margin-top:20px;
+    margin-bottom:10px;
+    color:#1e3a8a;
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}
+
+/* =========================================
+   RESPONSIVE DESIGN
+   For phone screen
+========================================= */
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    nav ul{
+        flex-direction:column;
+        margin-top:10px;
+    }
+
+    .hero h1{
+        font-size:34px;
+    }
+
+    .page-header h1{
+        font-size:30px;
+    }
+
+    .profile-card{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .profile-image img{
+        width:200px;
+        height:200px;
+    }
+}
